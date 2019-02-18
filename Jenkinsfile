@@ -10,7 +10,8 @@ pipeline {
     }
     stage('run'){
       steps{
-      sh ./gradlew build
+      sh './gradlew build'
+      sh   './gradlew npm_start'
       }
     
     }
