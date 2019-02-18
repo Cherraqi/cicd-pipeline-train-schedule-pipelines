@@ -11,7 +11,7 @@ pipeline {
     stage('run'){
       steps{
       sh './gradlew build'
-      sh   './gradlew npm_start'
+      sh   './gradlew npm_start &'
       }
     
     }
