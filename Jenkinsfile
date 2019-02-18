@@ -8,7 +8,7 @@ pipeline {
   archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
-    stage('run'){
+    stage('run server'){
       steps{
       sh './gradlew build'
       sh   './gradlew npm_start &'
